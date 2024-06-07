@@ -1,0 +1,14 @@
+.blog-container {
+  padding: 25px;
+}
+
+.blog-container__title {
+    margin-bottom: 0;
+    line-height: 0;
+    font-size: 30px;
+}
+
+.blog-container__date {
+    font-size: 14px;
+    filter: opacity(75%);
+}

@@ -1,0 +1,28 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "title": "Orcas are Dolphins",
+      "content": "Most people misunderstand Orcas as being Whales, but, in reality, they're closer to the Dolphins",
+      "date": "07-06-2024"
+    },
+    {
+      "id": 2,
+      "title": "My Cool blog",
+      "content": "This is a random blog i decided to write. Well, i was bored and decided to create a blog, so now you have to deal with it.",
+      "date": "17-04-2024"
+    },
+    {
+      "id": 3,
+      "title": "Mr Beast Blog!!!",
+      "content": "Hey, Mr Beast here! i'm going straight to the point. This blog was created exclusively for posting content to my new video, if you want a chance to win $ 10000, then stay alert!",
+      "date": "18-09-2022"
+    },
+    {
+      "id": 4,
+      "title": "Notes from the underground",
+      "content": "I tell you solemnly, that I have many times tried to become an insect. But I was not equal even to that. I swear, gentlemen, that to be too conscious is an illness- a real thorough-going illness.",
+      "date": "30-01-1860"
+    }
+  ]
+}
