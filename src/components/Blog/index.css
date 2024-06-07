@@ -1,0 +1,38 @@
+.blog-container {
+  padding: 20px;
+  background-color: aliceblue;
+}
+
+.blog-container__title,
+.blog-container__title--important {
+  margin-bottom: 0;
+  line-height: 10px;
+  font-size: 30px;
+}
+
+.blog-container__title--important {
+  animation: color-animation 4s alternate-reverse infinite;
+}
+
+@keyframes color-animation {
+  0% {
+    color: red;
+  }
+  25% {
+    color: green;
+  }
+  50% {
+    color: yellow;
+  }
+  75% {
+    color: pink;
+  }
+  100% {
+    color: blue;
+  }
+}
+
+.blog-container__date {
+  font-size: 14px;
+  filter: opacity(75%);
+}
