@@ -1,11 +1,68 @@
-import Blog from "./components/Blog/Blog"
+import { useEffect } from "react"
+import { useState } from "react"
+import { Blog, BlogForms } from "./components";
+import blogService from "./services/blogService";
 
 function App() {
-  return (
-    <>
-      <Blog title={"Meu Blog Legal!"} content={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus ipsa iusto deserunt laboriosam eaque amet quasi fugit vitae, fugiat et vero corporis repudiandae in illum eligendi delectus quod consectetur, eum eveniet quo culpa reiciendis consequatur non atque! Est, quis consequuntur?"} date={"07-06-2024"} important={false} />
+  const [blogs, setBlogs] = useState([]);
+  
+  const [title, setTitle] = useState("");
+  const [description, setDescription] = useState("");
+  const [url, setUrl] = useState("");
+  const [important, setImportant] = useState(false);
+
+  const fetchBlogs = async () => {    
+    const data = await blogService.getAll();
+    setBlogs({ ...blogs, ...data });
+  }
+
+  useEffect(() => {
+    fetchBlogs();
+  }, [])
+
+  const addNewBlog = async (e) => {
+    e.preventDefault();
+    
+    const newBlog = {
+      title: title,
+      description: description,
+      date: new Date().toISOString().split("T")[0],
+      url: url,
+      likes: 0,
+      important: important
+    }
+    setTitle("");
+    setDescription("");
+    setUrl("");
       
-      <Blog title={"Receitas Insanas!"} content={"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, ut!"} date={"07-06-2024"} important={true} />      
+    const data = await blogService.create(newBlog);
+    setBlogs({ ...blogs, data });
+  }
+
+  return (    
+    <>
+      <BlogForms
+        titleValue={title}
+        setTitle={setTitle}
+        
+        descriptionValue={description}
+        setDescription={setDescription}
+        
+        urlValue={url}
+        setUrl={setUrl}
+
+        importantValue={important}
+        setImportant={setImportant}
+
+        onSubmit={addNewBlog}
+      />
+
+      {
+        blogs ?
+        Object.values(blogs).map(blog => 
+          <Blog key={blog.id} blog={blog} />
+        ) : "loading..."
+      }
     </>
   )
 }

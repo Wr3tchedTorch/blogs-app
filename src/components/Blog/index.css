@@ -1,6 +1,6 @@
 .blog-container {
   padding: 20px;
-  background-color: aliceblue;
+  width: 50%;
 }
 
 .blog-container__title,

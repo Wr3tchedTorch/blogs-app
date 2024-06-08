@@ -3,26 +3,92 @@
     {
       "id": 1,
       "title": "Orcas are Dolphins",
-      "content": "Most people misunderstand Orcas as being Whales, but, in reality, they're closer to the Dolphins",
-      "date": "07-06-2024"
+      "description": "Most people misunderstand Orcas as being Whales, but, in reality, they're closer to the Dolphins",
+      "date": "07-06-2024",
+      "url": "https://www.example.com/",
+      "likes": 122,
+      "important": false
     },
     {
       "id": 2,
       "title": "My Cool blog",
-      "content": "This is a random blog i decided to write. Well, i was bored and decided to create a blog, so now you have to deal with it.",
-      "date": "17-04-2024"
+      "description": "This is a random blog i decided to write. Well, i was bored and decided to create a blog, so now you have to deal with it.",
+      "date": "17-04-2024",
+      "url": "https://www.example.com/",
+      "likes": 10,
+      "important": false
     },
     {
       "id": 3,
       "title": "Mr Beast Blog!!!",
-      "content": "Hey, Mr Beast here! i'm going straight to the point. This blog was created exclusively for posting content to my new video, if you want a chance to win $ 10000, then stay alert!",
-      "date": "18-09-2022"
+      "description": "Hey, Mr Beast here! i'm going straight to the point. This blog was created exclusively for posting content to my new video, if you want a chance to win $ 10000, then stay alert!",
+      "date": "18-09-2022",
+      "url": "https://www.example.com/",
+      "likes": 5890230,
+      "important": true
     },
     {
       "id": 4,
       "title": "Notes from the underground",
-      "content": "I tell you solemnly, that I have many times tried to become an insect. But I was not equal even to that. I swear, gentlemen, that to be too conscious is an illness- a real thorough-going illness.",
-      "date": "30-01-1860"
+      "description": "I tell you solemnly, that I have many times tried to become an insect. But I was not equal even to that. I swear, gentlemen, that to be too conscious is an illness- a real thorough-going illness.",
+      "date": "30-01-1860",
+      "url": "https://www.example.com/",
+      "likes": 891,
+      "important": false
+    },
+    {
+      "id": "f7fc",
+      "title": "Meu blog fodinha",
+      "description": "esse é um blog legal q to fazendo hehe",
+      "date": "2024-06-08",
+      "url": "http:bunda//",
+      "likes": 0,
+      "important": true
+    },
+    {
+      "id": "96a5",
+      "title": "Blog do Pedro morgan",
+      "description": "cara ruim no Lol kakakakak",
+      "date": "2024-06-08",
+      "url": "htttp/pedrotago",
+      "likes": 0,
+      "important": false
+    },
+    {
+      "id": "f126",
+      "title": "fdsafdsasd",
+      "description": "fdsafsdasdf",
+      "date": "2024-06-08",
+      "url": "fdsafsdfsda",
+      "likes": 0,
+      "important": false
+    },
+    {
+      "id": "85c9",
+      "title": "fdsafsd",
+      "description": "fdsafds",
+      "date": "2024-06-08",
+      "url": "fdsafsd",
+      "likes": 0,
+      "important": false
+    },
+    {
+      "id": "5603",
+      "title": "fdsasdf",
+      "description": "fdsafs",
+      "date": "2024-06-08",
+      "url": "fdasfds",
+      "likes": 0,
+      "important": false
+    },
+    {
+      "id": "6342",
+      "title": "blogs do matieuw",
+      "description": "blogzinho do mateus",
+      "date": "2024-06-08",
+      "url": "ghttp/mateus",
+      "likes": 0,
+      "important": true
     }
   ]
 }
