@@ -4,7 +4,7 @@ const userRouter = require("express").Router();
 
 userRouter
     .get("/", async (req, res) => {
-        const users = await User.find({});
+        const users = await User.find({});                
         res.json(users).status(200);
     })
     .post("/", async (req, res) => {
@@ -16,7 +16,11 @@ userRouter
             password: passwordHash
         });
         await user.save();
-        res.json(user).status(201);
+        res.status(201).json(user);
+    })
+    .delete("/", async (req, res) => {
+        await User.deleteMany({});
+        res.status(204).end();
     });
 
 module.exports = userRouter;
